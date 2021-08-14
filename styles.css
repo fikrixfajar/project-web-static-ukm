@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+li, a, button, label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+}
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    background-color: rgb(94, 137, 117);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+header label {
+    cursor: pointer;
+    font-size: 32px;
+}
+
+
+.nav_links li { 
+    display: inline-block;
+    padding: 0 20px;
+
+}
+
+
+.nav_links li a { 
+    transition: all 0.3s ease 0s;
+    font-size: 18px;
+}
+
+.nav_links li a:hover{ 
+    color: #43da94;
+}
+
+button{
+    padding: 10px 25px;
+    border: none;
+    background-color: rgb(0, 92, 179);
+    transition: all 0.3s ease 0s;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: .65;
+}
+
+
+/* ====CONTAINER==== */
+.container, body {
+    background-color: rgb(233, 230, 225);
+}
+
+.namaToko {
+    height: 100vh;
+    background-color: #35322e;
+    background-image: url(img/bahan/head.jpg);
+    /* -webkit-filter: grayscale(50%); */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.tulisan {
+    font-size: 2em;
+    color:#E9E6E1;
+    text-align: center;
+}
+
+.profil {
+    width: 580px;
+    /* display: flex; */
+    text-align: center;
+    margin: 60px auto;
+    /* background-color: #2B485A; */
+    font-size: 1.4em;
+}
+
+.profil img {
+    width: 4em;
+}
+.profil p {
+    text-align: justify;
+    text-indent: 50px;
+}
+
+.gallery {
+    font-size: 1.3em;
+    width: 100%;
+    background-color: rgb(94, 137, 117);;
+    color: rgb(233, 230, 225);
+    padding: 15px 0;
+}
+.galeri {
+    /* margin: 60px auto; */
+    display: flex;
+    justify-content: center;
+}
+
+.buah, .kayu {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 5%;
+}
+.hias, .taman {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+}
+
+.alamat {
+    margin: 0px auto;
+    /* border: 5px solid black; */
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: 
+    "top top"
+    "left right";
+    margin-bottom: 60px;
+    overflow: hidden;
+}
+
+.alamat h1 {
+    grid-area: top;
+    margin: 30px 0;
+    font-size: 2.2rem;
+}
+
+.sosmed {
+    grid-area: left;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    /* align-items: center; */
+    /* border: 5px solid black; */
+}
+
+.gMap {
+    grid-area: right;
+    background-color: rgb(204, 197, 197);
+    margin-right: 10%;
+    margin-bottom: 40px;
+}
+
+
+.sosmed img {
+    width: 75px;
+    margin-right: 130px;
+    transition-duration: 0.4s;
+    box-sizing: border-box;
+}
+
+.sosmed p {
+    display: none;
+}
+
+/* .wa img:hover{
+    width: 80px;
+    margin-left:40px ;
+    position: relative;
+    transition-duration: 0.4s;
+} */
+
+.sosmed img:hover {
+    width: 80px;
+    margin-left:40px ;
+    position: relative;
+    transition-duration: 0.4s;
+}
+
+.gMap iframe {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 10%;
+    /* border: 10px solid black; */
+}
+
+.gMap p {
+    font-size: 1.2em;
+    width: 600px;
+    margin: 10px auto;
+}
+
+.footer {
+    background-color: rgba(43, 72, 90, 1) ;
+    /* margin: 20px auto; */
+    /* overflow: hidden; */
+}
+
+.footer p{
+    padding: 10px;
+    color: #E9E6E1;;
+    text-align: center;
+    font-size: 1.3;
+}
+
+.footer p span{
+    color: rgb(205, 228, 72);
+}
