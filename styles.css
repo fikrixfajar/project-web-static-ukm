@@ -50,7 +50,7 @@ header label {
     color: #43da94;
 }
 
-button{
+Header a button{
     padding: 10px 25px;
     border: none;
     background-color: rgb(0, 92, 179);
@@ -59,7 +59,7 @@ button{
     cursor: pointer;
 }
 
-button:hover{
+Header a button:hover{
     opacity: .65;
 }
 
@@ -117,17 +117,32 @@ button:hover{
     /* margin: 60px auto; */
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
 }
 
 .buah, .kayu {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
     margin-left: 5%;
+    padding: 15px;
+    background-color: rgba(199, 230, 207, 0.6);
 }
+
 .hias, .taman {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    width: 80%;
     margin-right: 5%;
+    padding: 15px;
+    background-color: rgba(199, 230, 207, 0.6);
+}
+.taman {
+    margin-right: 10%;
 }
 
 .alamat {
@@ -164,6 +179,7 @@ button:hover{
     background-color: rgb(204, 197, 197);
     margin-right: 10%;
     margin-bottom: 40px;
+    border-radius: 20px;
 }
 
 
@@ -224,3 +240,49 @@ button:hover{
 .footer p span{
     color: rgb(205, 228, 72);
 }
+
+
+.buah img, .hias img, .kayu img {
+    width: 19%;
+    margin-left: 10px;
+
+}
+
+.gallery .taman img {
+    width: 25%;
+    margin-left: 10px;
+}
+
+
+.gallery .right {
+    text-align: right;
+    padding-right: 75px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgb(60, 85, 77);
+    box-sizing: border-box;
+}
+.gallery .left {
+    /* padding-left: 75px;
+    padding-top: 5px;
+    padding-bottom: 5px; */
+    background-color: rgb(60, 85, 77);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.gallery a, .bLainnya {
+    /* border: 5px solid black; */
+    border-radius: 10px;
+    padding: 5px;
+    margin: 0 10px;
+    border: none;
+    background-color: rgb(0, 92, 179);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    /* margin: 100px 0px; */
+} 
+
+.gallery a:hover, .bLainnya:hover {
+    opacity: .8;
+} 
