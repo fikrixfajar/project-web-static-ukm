@@ -13,7 +13,7 @@
 li, a, button, label {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1em;
     color: #edf0f1;
 }
 header {
@@ -30,7 +30,7 @@ header {
 
 header label {
     cursor: pointer;
-    font-size: 32px;
+    font-size: 2em;
 }
 
 
@@ -73,7 +73,6 @@ Header a button:hover{
     height: 100vh;
     background-color: #35322e;
     background-image: url(img/bahan/head.jpg);
-    /* -webkit-filter: grayscale(50%); */
     background-size: cover;
     background-position: center;
     position: relative;
@@ -90,11 +89,9 @@ Header a button:hover{
 }
 
 .profil {
-    width: 580px;
-    /* display: flex; */
+    width: 60%;
     text-align: center;
     margin: 60px auto;
-    /* background-color: #2B485A; */
     font-size: 1.4em;
 }
 
@@ -103,7 +100,7 @@ Header a button:hover{
 }
 .profil p {
     text-align: justify;
-    text-indent: 50px;
+    /* text-indent: 50px; */
 }
 
 .gallery {
@@ -114,20 +111,18 @@ Header a button:hover{
     padding: 15px 0;
 }
 .galeri {
-    /* margin: 60px auto; */
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-
 }
 
 .buah, .kayu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
     margin-left: 5%;
+    margin-right: 10%;
     padding: 15px;
     background-color: rgba(199, 230, 207, 0.6);
 }
@@ -136,8 +131,8 @@ Header a button:hover{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 80%;
     margin-right: 5%;
+    margin-left: 10%;
     padding: 15px;
     background-color: rgba(199, 230, 207, 0.6);
 }
@@ -147,7 +142,6 @@ Header a button:hover{
 
 .alamat {
     margin: 0px auto;
-    /* border: 5px solid black; */
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -170,14 +164,14 @@ Header a button:hover{
     flex-direction: column;
     position: relative;
     justify-content: center;
-    /* align-items: center; */
-    /* border: 5px solid black; */
 }
 
 .gMap {
     grid-area: right;
     background-color: rgb(204, 197, 197);
-    margin-right: 10%;
+    /* margin-right: 10%; */
+    /* margin-left: auto;
+    margin-right: auto; */
     margin-bottom: 40px;
     border-radius: 20px;
 }
@@ -194,8 +188,6 @@ Header a button:hover{
     display: none;
 }
 
-
-
 .sosmed img:hover {
     width: 80px;
     margin-left:40px ;
@@ -210,26 +202,23 @@ Header a button:hover{
     margin-bottom: 20px;
     margin-top: 20px;
     margin-left: 10%;
-    /* border: 10px solid black; */
 }
 
 .gMap p {
     font-size: 1.2em;
-    width: 600px;
+    width: 65%;
     margin: 10px auto;
 }
 
 .footer {
     background-color: rgba(43, 72, 90, 1) ;
-    /* margin: 20px auto; */
-    /* overflow: hidden; */
 }
 
 .footer p{
     padding: 10px;
     color: #E9E6E1;;
     text-align: center;
-    font-size: 1.3;
+    font-size: .9em;
 }
 
 .footer p span{
@@ -243,7 +232,11 @@ Header a button:hover{
 
 }
 
-.gallery .taman img {
+.gallery img {
+    cursor: pointer;
+}
+
+.taman img {
     width: 25%;
     margin-left: 10px;
 }
@@ -258,26 +251,194 @@ Header a button:hover{
     box-sizing: border-box;
 }
 .gallery .left {
-    /* padding-left: 75px;
+    padding-left: 75px;
     padding-top: 5px;
-    padding-bottom: 5px; */
+    padding-bottom: 5px;
     background-color: rgb(60, 85, 77);
     box-sizing: border-box;
     overflow: hidden;
 }
 
-.gallery a, .bLainnya {
-    /* border: 5px solid black; */
+.bLainnya {
     border-radius: 10px;
-    padding: 5px;
-    margin: 0 10px;
+    padding: 15px 5px;
+    margin: 0 15px;
     border: none;
     background-color: rgb(0, 92, 179);
     transition: all 0.3s ease 0s;
     cursor: pointer;
-    /* margin: 100px 0px; */
+    font-size: .9em;
 } 
 
-.gallery a:hover, .bLainnya:hover {
+.bLainnya:hover {
     opacity: .8;
 } 
+
+
+
+.buah2, .hias2, .kayu2, .taman2 {
+    display: none;
+}
+
+
+
+
+
+
+
+/* ===Tablet=== */
+@media only screen and (max-width: 768px) {
+    header .cta {
+        display: none;
+    }
+
+    header label {
+        font-size: 1em;
+    }
+
+    nav {
+        margin: auto;
+    }
+
+    .nav_links li a { 
+        font-size: 0.8em;
+    }
+
+    .left, .right{
+        /* border: 5px solid black; */
+        padding-right: 75px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2em;
+
+    }
+
+     .right{
+        padding-left: 75px;
+     }
+
+
+     .buah, .hias, .kayu, .taman {
+        display: none;
+    }
+
+
+    .buah2, .kayu2,.hias2, .taman2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0 0;
+        padding: 15px;
+        padding-bottom: 35px;
+        background-color: rgba(199, 230, 207, 0.6);
+    }
+
+
+     .buah2 img, .hias2 img, .kayu2 img, .taman2 img{
+        /* align-items: center; */
+        width: 44%;
+        height: auto;
+        margin: 10px auto;
+    
+    }
+
+    .gallery .bLainnya {
+        margin-top: 25px;
+        border-radius: 5px;
+        padding: 10px 5px;
+        font-size: .6em;
+    } 
+
+    .bLainnya:hover {
+        background-color: rgba(32, 124, 209, 0.9); ;
+    }
+
+
+    .alamat {
+        margin: 0px auto;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "top" "top"
+        "right" "right"
+        "left" "left";
+        margin-bottom: 60px;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    
+    .alamat h1 {
+        grid-area: top;
+        font-size: 2rem;
+    }
+    
+    
+    .gMap {
+        grid-area: right;
+        background-color: rgb(204, 197, 197);
+        border-radius: 10px;
+    }
+
+    .gMap iframe {
+        width: 90%;
+        margin: 10px auto;
+    }
+    
+    .gMap p {
+        font-size: 1em;
+        width: 65%;
+        margin: 10px auto;
+    }
+
+
+    .sosmed {
+        grid-area: left;
+        margin: auto;
+        flex-direction: row;
+    }
+
+    .sosmed img {
+        width: 75px;
+        margin-right: 0px;
+        transition-duration: 0.4s;
+    }
+
+    .sosmed img:hover {
+        width: 85px;
+        position: relative;
+        margin-left: 0px;
+    }
+
+    .footer p{
+        padding: 5px;
+        font-size: .8em;
+    }
+
+}
+
+
+
+
+
+
+
+/* ===Handphone=== */
+@media only screen and (max-width: 480px) {
+.buah2, .hias2, .kayu2, .taman2 {
+    flex-direction: column;
+    margin-bottom: 120px;
+}
+
+.buah2 img, .hias2 img, .kayu2 img, .taman2 img {
+    width: 100%;
+}
+
+.taman2 {
+    margin-bottom: 20px;
+}
+
+
+}
