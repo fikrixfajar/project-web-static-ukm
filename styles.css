@@ -427,7 +427,28 @@ Header a button:hover{
 
 /* ===Handphone=== */
 @media only screen and (max-width: 480px) {
-.buah2, .hias2, .kayu2, .taman2 {
+    header {
+        margin: 0 0;
+        justify-content: flex-end;
+        padding: 0 2%;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0;
+        margin-left: 3%;
+    }
+
+    .nav_links li { 
+        display: inline-block;
+        padding: 5px 2px;
+    
+    }
+    
+
+
+    .buah2, .hias2, .kayu2, .taman2 {
     flex-direction: column;
     margin-bottom: 120px;
 }
@@ -440,5 +461,6 @@ Header a button:hover{
     margin-bottom: 20px;
 }
 
-
+.profil {
+    width: 90%;
 }
